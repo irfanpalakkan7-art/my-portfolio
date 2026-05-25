@@ -1,0 +1,572 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Personal Portfolio - High-end, interactive developer showcase featuring custom designs, projects, and animations.">
+    <title>Developer Portfolio</title>
+
+    <!-- Link to Stylesheets -->
+    <link rel="stylesheet" href="style/navbar.css">
+    <link rel="stylesheet" href="style/main.css">
+</head>
+
+<body>
+
+    <!-- --- DYNAMIC NAVIGATION BAR --- -->
+    <nav class="navbar">
+        <div>
+            <button id="nav-home" class="home active">HOME</button>
+        </div>
+        <div>
+            <button id="nav-about" class="about">ABOUT</button>
+        </div>
+        <div>
+            <button id="nav-skills" class="skills">SKILLS</button>
+        </div>
+        <div>
+            <button id="nav-projects" class="projects">PROJECTS</button>
+        </div>
+        <div>
+            <button id="nav-contact" class="contact">CONTACT</button>
+        </div>
+    </nav>
+
+    <!-- --- HERO SECTION --- -->
+    <section id="home">
+        <div class="bg-glow"></div>
+        <div class="hero-content reveal">
+            <span class="hero-subtitle">Hi, I'm Mohammad Irfan P</span>
+            <h1 class="hero-title">Engineering Reliable Software & <span class="gradient-text">Exceptional Web
+                    Experiences</span></h1>
+            <p class="hero-description">
+                Pursuing BCA at Hindusthan College, I specialize in architecting fast, secure, and visually stunning
+                digital products. By merging the structural power of Java with the fluid versatility of HTML/CSS, PHP,
+                and SQL, I deliver clean, robust code and sleek user interfaces that inspire absolute trust.
+            </p>
+            <div class="hero-cta">
+                <button class="btn-secondary"
+                    onclick="document.getElementById('contactForm').scrollIntoView({behavior: 'smooth', block: 'center'})">Get In
+                    Touch</button>
+                <button class="btn-secondary"
+                    onclick="document.getElementById('projects').scrollIntoView({behavior: 'smooth'})">View
+                    Work</button>
+                <a href="https://www.fiverr.com/s/NNXg6oN" target="_blank" rel="noopener noreferrer" class="btn-fiverr-hero" aria-label="Hire Me on Fiverr">
+                    <svg viewBox="0 0 89 27" fill="none" xmlns="http://www.w3.org/2000/svg" class="fiverr-svg-mini">
+                        <g fill="currentColor"><path d="m81.6 13.1h-3.1c-2 0-3.1 1.5-3.1 4.1v9.3h-6v-13.4h-2.5c-2 0-3.1 1.5-3.1 4.1v9.3h-6v-18.4h6v2.8c1-2.2 2.3-2.8 4.3-2.8h7.3v2.8c1-2.2 2.3-2.8 4.3-2.8h2zm-25.2 5.6h-12.4c.3 2.1 1.6 3.2 3.7 3.2 1.6 0 2.7-.7 3.1-1.8l5.3 1.5c-1.3 3.2-4.5 5.1-8.4 5.1-6.5 0-9.5-5.1-9.5-9.5 0-4.3 2.6-9.4 9.1-9.4 6.9 0 9.2 5.2 9.2 9.1 0 .9 0 1.4-.1 1.8zm-5.7-3.5c-.1-1.6-1.3-3-3.3-3-1.9 0-3 .8-3.4 3zm-22.9 11.3h5.2l6.6-18.3h-6l-3.2 10.7-3.2-10.8h-6zm-24.4 0h5.9v-13.4h5.7v13.4h5.9v-18.4h-11.6v-1.1c0-1.2.9-2 2.2-2h3.5v-5h-4.4c-4.3 0-7.2 2.7-7.2 6.6v1.5h-3.4v5h3.4z"></path></g>
+                        <g fill="#1dbf73"><path d="m85.3 27c2 0 3.7-1.7 3.7-3.7s-1.7-3.7-3.7-3.7-3.7 1.7-3.7 3.7 1.7 3.7 3.7 3.7z"></path></g>
+                    </svg>
+                </a>
+                <a href="cv/Professional Modern CV Resume.pdf" target="_blank" class="btn-resume-hero" aria-label="Download CV">Download CV</a>
+            </div>
+
+            <div class="scroll-indicator">
+                <span>Scroll Down</span>
+                <svg viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <line x1="12" y1="5" x2="12" y2="19"></line>
+                    <polyline points="19 12 12 19 5 12"></polyline>
+                </svg>
+            </div>
+        </div>
+    </section>
+
+    <!-- --- ABOUT SECTION --- -->
+    <section id="about">
+        <div class="section-header reveal">
+            <span class="subtitle">Who I Am</span>
+            <h2 class="title">About Me</h2>
+        </div>
+
+        <div class="about-grid reveal delay-100">
+            <div class="glass-card bio-card">
+                <h3>Pursuing BCA @ Hindusthan College</h3>
+                <p>
+                    My name is <strong>Mohammad Irfan P</strong>. I am currently pursuing my <strong>Bachelor of
+                        Computer Applications (BCA)</strong> course at <strong>Hindusthan College of Arts and
+                        Science</strong>. I have a strong passion for writing modular code, modeling database relations,
+                    and styling user interfaces.
+                </p>
+                <p>
+                    I focus heavily on core languages like <strong>Java</strong> to construct robust applications, and
+                    leverage standard web pillars: <strong>HTML & CSS</strong> for rich interface designs,
+                    <strong>PHP</strong> for server processes, and relational <strong>SQL</strong> queries to
+                    orchestrate database schemas.
+                </p>
+            </div>
+
+            <div class="stats-grid">
+                <div class="glass-card stat-box reveal delay-100">
+                    <div class="stat-number gradient-text">5+</div>
+                    <div class="stat-label">Core Techs</div>
+                </div>
+                <div class="glass-card stat-box reveal delay-200">
+                    <div class="stat-number gradient-text">BCA</div>
+                    <div class="stat-label">Academic Course</div>
+                </div>
+                <div class="glass-card stat-box reveal delay-300">
+                    <div class="stat-number gradient-text">HCAS</div>
+                    <div class="stat-label">Arts & Science College</div>
+                </div>
+                <div class="glass-card stat-box reveal delay-400">
+                    <div class="stat-number gradient-text">100%</div>
+                    <div class="stat-label">Dedicated Focus</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Resume & Credentials Highlights -->
+        <div class="credentials-container reveal delay-200" style="margin-top: 50px; width: 100%;">
+            <div class="credentials-grid">
+                <!-- Left Column: Education Timeline -->
+                <div class="glass-card credentials-card education-timeline-card">
+                    <div class="card-header">
+                        <svg class="card-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M22 10v6M2 10l10-5 10 5-10 5z"></path>
+                            <path d="M6 12v5c0 2 2 3 6 3s6-1 6-3v-5"></path>
+                        </svg>
+                        <h3>Education</h3>
+                    </div>
+                    
+                    <div class="timeline">
+                        <div class="timeline-item">
+                            <div class="timeline-dot"></div>
+                            <div class="timeline-date">2024 - 2026</div>
+                            <h4 class="timeline-title">Bachelor of Computer Applications (BCA)</h4>
+                            <p class="timeline-subtitle">Bharathiar University (Pursuing at Hindusthan College of Arts and Science)</p>
+                            <ul class="timeline-details">
+                                <li><strong>Key Subjects:</strong> Web Development, Database Management, Software Engineering, Data Structures & Algorithms, Computer Networks, Operating Systems</li>
+                                <li><strong>Programming Exposure:</strong> Java, PHP, Python, C, HTML5, CSS3, SQL</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Column: Certifications & Training -->
+                <div class="glass-card credentials-card certifications-card">
+                    <div class="card-header">
+                        <svg class="card-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect>
+                            <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path>
+                        </svg>
+                        <h3>Certifications & Training</h3>
+                    </div>
+                    
+                    <div class="certifications-list">
+                        <!-- IIT CSS -->
+                        <div class="cert-item">
+                            <div class="cert-info">
+                                <span class="cert-badge-logo iit-logo">IIT</span>
+                                <div>
+                                    <h4 class="cert-title">CSS Training</h4>
+                                    <p class="cert-issuer">IIT Bombay (Spoken Tutorial) • March 2026</p>
+                                </div>
+                            </div>
+                            <span class="cert-score">97.5%</span>
+                        </div>
+                        
+                        <!-- IIT Python -->
+                        <div class="cert-item">
+                            <div class="cert-info">
+                                <span class="cert-badge-logo iit-logo">IIT</span>
+                                <div>
+                                    <h4 class="cert-title">Python 3.4.3 Training</h4>
+                                    <p class="cert-issuer">IIT Bombay (Spoken Tutorial) • March 2026</p>
+                                </div>
+                            </div>
+                            <span class="cert-score">4 Credits</span>
+                        </div>
+
+                        <!-- IIT R -->
+                        <div class="cert-item">
+                            <div class="cert-info">
+                                <span class="cert-badge-logo iit-logo">IIT</span>
+                                <div>
+                                    <h4 class="cert-title">R Programming Training</h4>
+                                    <p class="cert-issuer">IIT Bombay (Spoken Tutorial) • March 2026</p>
+                                </div>
+                            </div>
+                            <span class="cert-score">72.5%</span>
+                        </div>
+
+                        <!-- Simplilearn JS -->
+                        <div class="cert-item">
+                            <div class="cert-info">
+                                <span class="cert-badge-logo sl-logo">SL</span>
+                                <div>
+                                    <h4 class="cert-title">JavaScript for Beginners</h4>
+                                    <p class="cert-issuer">Simplilearn SkillUP • June 2025</p>
+                                </div>
+                            </div>
+                            <span class="cert-status">Completed</span>
+                        </div>
+
+                        <!-- MongoDB -->
+                        <div class="cert-item">
+                            <div class="cert-info">
+                                <span class="cert-badge-logo mongo-logo">MDB</span>
+                                <div>
+                                    <h4 class="cert-title">MongoDB Basics for Students</h4>
+                                    <p class="cert-issuer">MongoDB, Inc. • December 2025</p>
+                                </div>
+                            </div>
+                            <span class="cert-status">Completed</span>
+                        </div>
+
+                        <!-- Simplilearn DL -->
+                        <div class="cert-item">
+                            <div class="cert-info">
+                                <span class="cert-badge-logo sl-logo">SL</span>
+                                <div>
+                                    <h4 class="cert-title">Beginner's Guide for Deep Learning</h4>
+                                    <p class="cert-issuer">Simplilearn SkillUP • June 2025</p>
+                                </div>
+                            </div>
+                            <span class="cert-status">Completed</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Resume CTA card -->
+            <div class="resume-cta-panel glass-card text-center reveal delay-300">
+                <div class="resume-cta-content">
+                    <div class="resume-cta-icon-box">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                            <polyline points="14 2 14 8 20 8"></polyline>
+                            <line x1="16" y1="13" x2="8" y2="13"></line>
+                            <line x1="16" y1="17" x2="8" y2="17"></line>
+                            <polyline points="10 9 9 9 8 9"></polyline>
+                        </svg>
+                    </div>
+                    <div>
+                        <h3>Looking for a complete resume?</h3>
+                        <p>Get a comprehensive overview of my technical profile, certifications, and academic background in a clean, printable PDF format.</p>
+                    </div>
+                </div>
+                <div class="resume-cta-actions">
+                    <a href="cv/Professional Modern CV Resume.pdf" target="_blank" class="btn-resume-action btn-view" rel="noopener noreferrer">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
+                            <circle cx="12" cy="12" r="3"></circle>
+                        </svg>
+                        <span>View Resume</span>
+                    </a>
+                    <a href="cv/Professional Modern CV Resume.pdf" download="Mohammad_Irfan_Resume.pdf" class="btn-resume-action btn-download">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                            <polyline points="7 10 12 15 17 10"></polyline>
+                            <line x1="12" y1="15" x2="12" y2="3"></line>
+                        </svg>
+                        <span>Download PDF</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- --- SKILLS SECTION --- -->
+    <section id="skills">
+        <div class="section-header reveal">
+            <span class="subtitle">My Stack</span>
+            <h2 class="title">Technical Competence</h2>
+        </div>
+
+        <div class="skills-grid">
+            <!-- Column 1: Web & Design Core -->
+            <div class="glass-card skills-category reveal delay-100">
+                <h3>Web Core & Layout</h3>
+                <div class="skills-list">
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span class="skill-name">HTML5 & CSS3 Design</span>
+                            <span class="skill-percentage">95%</span>
+                        </div>
+                        <div class="skill-bar-bg">
+                            <div class="skill-bar-fill" data-percentage="95%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span class="skill-name">Responsive Interfaces</span>
+                            <span class="skill-percentage">90%</span>
+                        </div>
+                        <div class="skill-bar-bg">
+                            <div class="skill-bar-fill" data-percentage="90%"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Column 2: Backend & Systems -->
+            <div class="glass-card skills-category reveal delay-200">
+                <h3>Backend Scripting</h3>
+                <div class="skills-list">
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span class="skill-name">Java Programming</span>
+                            <span class="skill-percentage">88%</span>
+                        </div>
+                        <div class="skill-bar-bg">
+                            <div class="skill-bar-fill" data-percentage="88%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span class="skill-name">PHP Server Code</span>
+                            <span class="skill-percentage">80%</span>
+                        </div>
+                        <div class="skill-bar-bg">
+                            <div class="skill-bar-fill" data-percentage="80%"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Column 3: Relational Databases -->
+            <div class="glass-card skills-category reveal delay-300">
+                <h3>Data Structures</h3>
+                <div class="skills-list">
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span class="skill-name">SQL Databases</span>
+                            <span class="skill-percentage">85%</span>
+                        </div>
+                        <div class="skill-bar-bg">
+                            <div class="skill-bar-fill" data-percentage="85%"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="skills-badges">
+                    <span class="skill-badge">Java</span>
+                    <span class="skill-badge">HTML</span>
+                    <span class="skill-badge">CSS</span>
+                    <span class="skill-badge">SQL</span>
+                    <span class="skill-badge">PHP</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- --- PROJECTS SECTION --- -->
+    <section id="projects">
+        <div class="section-header reveal">
+            <span class="subtitle">My Works</span>
+            <h2 class="title">Featured Work</h2>
+        </div>
+
+        <div class="projects-grid">
+            <!-- Project 2 -->
+            <div class="glass-card project-card reveal delay-200" onclick="window.open('https://quick-fix-wine.vercel.app/www.fixma.in/index.html', '_blank'); return false;" style="cursor: pointer;">
+                <div class="project-visual">
+                    <!-- High-End Mobile Repair SVG illustration -->
+                    <svg viewBox="0 0 200 120" xmlns="http://www.w3.org/2000/svg">
+                        <rect x="10" y="10" width="180" height="100" rx="6" fill="#0d1527"
+                            stroke="rgba(255,255,255,0.08)" stroke-width="1.5" />
+                        
+                        <!-- Phone with Gear Logo -->
+                        <g transform="translate(100, 60)">
+                            <!-- Phone outline -->
+                            <rect x="-18" y="-28" width="36" height="56" rx="4" fill="none" stroke="url(#phone-gear-grad)" stroke-width="2.5" filter="drop-shadow(0 0 6px rgba(71,184,255,0.4))" />
+                            
+                            <!-- Phone notch -->
+                            <rect x="-8" y="-28" width="16" height="2.5" rx="1" fill="url(#phone-gear-grad)" opacity="0.6" />
+                            
+                            <!-- Phone screen background -->
+                            <rect x="-16" y="-25" width="32" height="48" rx="3" fill="rgba(71,184,255,0.03)" />
+                            
+                            <!-- Gear icon (top right) - bigger -->
+                            <g transform="translate(8, -15) scale(1.6)">
+                                <!-- Gear circle -->
+                                <circle cx="0" cy="0" r="8" fill="url(#phone-gear-grad)" filter="drop-shadow(0 0 4px rgba(71,184,255,0.5))" />
+                                
+                                <!-- Gear teeth (8 total) -->
+                                <g fill="url(#phone-gear-grad)">
+                                    <!-- Main 4 teeth -->
+                                    <rect x="-2" y="-11" width="4" height="3.5" rx="0.5" />
+                                    <rect x="-2" y="7.5" width="4" height="3.5" rx="0.5" />
+                                    <rect x="-11" y="-2" width="3.5" height="4" rx="0.5" />
+                                    <rect x="7.5" y="-2" width="3.5" height="4" rx="0.5" />
+                                    
+                                    <!-- Diagonal teeth (45°, 135°, 225°, 315°) -->
+                                    <g transform="rotate(45)">
+                                        <rect x="-1.5" y="-11" width="3" height="3.5" rx="0.5" />
+                                        <rect x="-1.5" y="7.5" width="3" height="3.5" rx="0.5" />
+                                    </g>
+                                    <g transform="rotate(135)">
+                                        <rect x="-1.5" y="-11" width="3" height="3.5" rx="0.5" />
+                                        <rect x="-1.5" y="7.5" width="3" height="3.5" rx="0.5" />
+                                    </g>
+                                </g>
+                                
+                                <!-- Center hole -->
+                                <circle cx="0" cy="0" r="3" fill="#0d1527" />
+                            </g>
+                            
+                            <!-- Phone home button -->
+                            <circle cx="0" cy="24" r="1.5" fill="rgba(71,184,255,0.3)" />
+                        </g>
+                        
+                        <defs>
+                            <linearGradient id="phone-gear-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+                                <stop offset="0%" stop-color="#47b8ff" />
+                                <stop offset="100%" stop-color="#3a7de9" />
+                            </linearGradient>
+                        </defs>
+                    </svg>
+                </div>
+                <div class="project-info">
+                    <div class="project-tags">
+                        <span class="project-tag">HTML5 & CSS3</span>
+                        <span class="project-tag">Client Project</span>
+                        <span class="project-tag">Responsive Design</span>
+                    </div>
+                    <h3>QuickFix Repairing Portal</h3>
+                    <p class="project-desc">
+                        A clean, highly responsive business portal designed and built for a professional mobile
+                        repairing center, featuring mobile-first layout adaptations and dynamic contact actions.
+                    </p>
+                    <div class="project-actions">
+                        <a href="https://quick-fix-wine.vercel.app/www.fixma.in/index.html" target="_blank"
+                            class="project-link">
+                            <span>Launch Project</span>
+                            <svg viewBox="0 0 24 24">
+                                <path d="M5 12h14M12 5l7 7-7 7" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- --- CONTACT SECTION --- -->
+    <section id="contact">
+        <div class="section-header reveal">
+            <span class="subtitle">Say Hello</span>
+            <h2 class="title">Get In Touch</h2>
+        </div>
+
+        <div class="contact-grid reveal delay-100">
+            <!-- Fiverr Freelance Card -->
+            <div class="glass-card fiverr-card">
+                <div class="fiverr-badge">
+                    <svg class="fiverr-logo" viewBox="0 0 89 27" fill="none" xmlns="http://www.w3.org/2000/svg" aria-label="Fiverr">
+                        <g fill="currentColor"><path d="m81.6 13.1h-3.1c-2 0-3.1 1.5-3.1 4.1v9.3h-6v-13.4h-2.5c-2 0-3.1 1.5-3.1 4.1v9.3h-6v-18.4h6v2.8c1-2.2 2.3-2.8 4.3-2.8h7.3v2.8c1-2.2 2.3-2.8 4.3-2.8h2zm-25.2 5.6h-12.4c.3 2.1 1.6 3.2 3.7 3.2 1.6 0 2.7-.7 3.1-1.8l5.3 1.5c-1.3 3.2-4.5 5.1-8.4 5.1-6.5 0-9.5-5.1-9.5-9.5 0-4.3 2.6-9.4 9.1-9.4 6.9 0 9.2 5.2 9.2 9.1 0 .9 0 1.4-.1 1.8zm-5.7-3.5c-.1-1.6-1.3-3-3.3-3-1.9 0-3 .8-3.4 3zm-22.9 11.3h5.2l6.6-18.3h-6l-3.2 10.7-3.2-10.8h-6zm-24.4 0h5.9v-13.4h5.7v13.4h5.9v-18.4h-11.6v-1.1c0-1.2.9-2 2.2-2h3.5v-5h-4.4c-4.3 0-7.2 2.7-7.2 6.6v1.5h-3.4v5h3.4z"></path></g>
+                        <g fill="#1dbf73"><path d="m85.3 27c2 0 3.7-1.7 3.7-3.7s-1.7-3.7-3.7-3.7-3.7 1.7-3.7 3.7 1.7 3.7 3.7 3.7z"></path></g>
+                    </svg>
+                    <span class="fiverr-tag">Available for Hire</span>
+                </div>
+                <h3 class="fiverr-card-title">Let's Collaborate</h3>
+                <p class="fiverr-card-desc">
+                    Need high-performance software, interactive frontend development, or backend database architecture? Order a gig directly on Fiverr with secure transactions and assured results.
+                </p>
+                <ul class="fiverr-services">
+                    <li>
+                        <svg class="service-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                        <span>Responsive HTML5 & CSS3 Interfaces</span>
+                    </li>
+                    <li>
+                        <svg class="service-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                        <span>Interactive UI Animations & Micro-effects</span>
+                    </li>
+                    <li>
+                        <svg class="service-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                        <span>Robust Java Development & OOP Structuring</span>
+                    </li>
+                    <li>
+                        <svg class="service-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                        <span>PHP Serverside Logic & Relational SQL Datastores</span>
+                    </li>
+                </ul>
+                <a href="https://www.fiverr.com/s/NNXg6oN" target="_blank" rel="noreferrer noopener" class="fiverr-btn">
+                    <span>Order on Fiverr</span>
+                    <svg class="arrow-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <line x1="5" y1="12" x2="19" y2="12"></line>
+                        <polyline points="12 5 19 12 12 19"></polyline>
+                    </svg>
+                </a>
+            </div>
+
+            <!-- Existing Contact Form -->
+            <div class="glass-card contact-form-card">
+                <form id="contactForm" class="contact-form">
+                    <!-- Web3Forms Configuration -->
+                    <!-- GET YOUR FREE KEY AT: https://web3forms.com -->
+                    <input type="hidden" name="access_key" id="accessKeyInput" value="489643cf-e09c-46fe-93df-802c708a2ba1">
+                    <input type="hidden" name="subject" value="New Portfolio Message">
+                    <input type="hidden" name="from_name" value="Portfolio Contact Form">
+                    <!-- Honeypot spam protection -->
+                    <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
+
+                    <div class="form-group">
+                        <input type="text" id="name" name="name" class="form-input" placeholder=" " required autocomplete="name">
+                        <label for="name" class="form-label">Full Name</label>
+                    </div>
+
+                    <div class="form-group">
+                        <input type="email" id="email" name="email" class="form-input" placeholder=" " required autocomplete="email">
+                        <label for="email" class="form-label">Email Address</label>
+                    </div>
+
+                    <div class="form-group">
+                        <textarea id="message" name="message" class="form-input" placeholder=" " required></textarea>
+                        <label for="message" class="form-label">Your Message</label>
+                    </div>
+
+                    <!-- Styled contact submit button -->
+                    <button type="submit" class="contact form-submit-btn">SEND MESSAGE</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- --- FOOTER --- -->
+    <footer>
+        <div class="footer-socials">
+            <a href="https://github.com/irfanpalakkan7-art" class="social-link" aria-label="GitHub" target="_blank" rel="noreferrer noopener">
+                <svg viewBox="0 0 24 24">
+                    <path
+                        d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12" />
+                </svg>
+            </a>
+            <a href="https://www.linkedin.com/in/mohammad-irfan-3a3647409/?isSelfProfile=true" class="social-link" aria-label="LinkedIn" target="_blank" rel="noreferrer noopener">
+                <svg viewBox="0 0 24 24">
+                    <path
+                        d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.779-1.75-1.75s.784-1.75 1.75-1.75 1.75.779 1.75 1.75-.784 1.75-1.75 1.75zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" />
+                </svg>
+            </a>
+            <a href="https://www.fiverr.com/s/NNXg6oN" class="social-link fiverr" aria-label="Fiverr" target="_blank" rel="noreferrer noopener">
+                <svg viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M16.32 10.43h-2.15v-.9c0-.6.44-.75.76-.75h1.36V6.15h-1.87c-2.3 0-2.82 1.7-2.82 2.8v1.48H9.77v2.63h1.83v7.35h2.95v-7.35h2.15l.38-2.63z" />
+                    <circle cx="18.5" cy="18.5" r="1.5" fill="#1dbf73" />
+                </svg>
+            </a>
+            <a href="https://x.com/mohairfanp" class="social-link" aria-label="Twitter / X" target="_blank" rel="noreferrer noopener">
+                <svg viewBox="0 0 24 24">
+                    <path
+                        d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z" />
+                </svg>
+            </a>
+        </div>
+        <p class="footer-copyright">&copy; 2026 Developer Portfolio. All rights reserved.</p>
+    </footer>
+
+    <!-- --- SUCCESS NOTIFICATION SYSTEM --- -->
+    <div id="toast" class="toast">
+        <svg viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <polyline points="20 6 9 17 4 12"></polyline>
+        </svg>
+        <div>
+            <strong style="display: block; margin-bottom: 2px;">Message Sent!</strong>
+            <span style="color: var(--text-secondary); font-size: 0.85rem;">I will get back to you shortly.</span>
+        </div>
+    </div>
+
+    <!-- Link to JavaScript File -->
+    <script src="js/app.js?v=2"></script>
+</body>
+
+</html>
